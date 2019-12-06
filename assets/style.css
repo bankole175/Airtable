@@ -26,12 +26,30 @@ nav ul li{
     cursor: pointer;
 }
 
+.logo img {
+    height: 45px;
+}
+.menu-icons{
+    font-size: 3rem;
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+}
 .others {
     float: right;
     margin-right: 20px;
     font-size: 1.0rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.others li a {
+    text-decoration: none;
+    color: rgba(235, 230, 230, 0.9);
+}
+
+.others li a:hover {
+    color: #fff;
 }
 
 .spread {
@@ -43,8 +61,9 @@ nav ul li{
     line-height: 1.4;
 }
 
-.mobile {
-    margin-left: -150px;
+.mobile img{
+    height: 400px;
+    margin-left: 20px;
 }
 
 .sign-up {
@@ -66,9 +85,9 @@ nav ul li{
 }
 
 .organize {
-    margin-left: 13%;
+    margin-left: 1%;
     margin-top: 50px;
-    margin-right: 100px;
+    margin-right: 13%;
 }
 
 .organize h4 {
@@ -90,8 +109,15 @@ nav ul li{
 .billy {
     margin-top: 15px;
     padding: 0.1rem;
-    width: 40%;
+    width: 55%;
     box-shadow: 5px 5px 5px 5px rgb(235, 233, 233);
+    position: relative;
+}
+.billy img {
+    width: 30px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
 }
 
 small {
@@ -99,11 +125,19 @@ small {
 }
 .bill {
     font-weight: 600;
-    margin-left: 8px;
+    margin-left: 40px;
+    margin-top: 7px;
 }
+.bill h6 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 .billy p {
-    margin-top: 0;
-    margin-left: 8px;
+    margin-top: -10px;
+    margin-left: 40px;
+    white-space: nowrap;
+    font-weight: 400;
 }
 
 .unique {
@@ -258,11 +292,69 @@ small {
 }
 
 @media screen and (max-width: 986px){
+    /* .others{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        background-color: #191919;
+        z-index: 1000;
+        align-items: initial;
+        overflow-y: scroll;
+    } */
+
+    /* .menu-icons{
+        display: block;
+    } */
+
+    .ion-md-close{
+        display: none;
+    }
+
+    nav.active .ion-md-close{
+        display: block;
+    }
+
+    nav.active .ion-md-menu{
+        display: none;
+    }
+
+    nav.active .others{
+        display: flex;
+    }
     .gmail img {
+        /* display: none; */
         margin-right: -320px;
         margin-top: 5px;
     }
     .img {
         margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:982px) {
+    .billy {
+        width: 75%;
+    }
+    .organize {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:764px) {
+    .mobile {
+        transform: translateX(30%);
+    }
+    .gmail {
+        display: none;
+    }
+    .astronaunt {
+        display: none;
+    }
+
+    .organize {
+        display: none;
     }
 }

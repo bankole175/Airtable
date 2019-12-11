@@ -4,37 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title> Airtable</title>
-    <link rel="icon" type="image/icon" href="./assets/img/airtable-icon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+    <title>Airtable</title>
+    <link rel="icon" type="image/icon" href="./assets/img/airtable-icon.ico" />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"/>
     <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
     <div class="airtable">
-      <h4 class="main">
-        <nav class="d-flex justify-content-between align-items-center">
-          <h4 class="logo"><img src="./assets/img/airtable-icon.svg" alt=""> Airtable</h4>
-          <div class="menu-icons d-block d-md-none">
-            <i class="icon ion-md-menu"></i>
-            <i class="icon ion-md-close"></i>
-          </div>
-          <div class="d-none d-md-block">
-            <ul class="others">
-              <li> <a href="#">Product</a></li>
-              <li> <a href="#">Blocks</a></li>
-              <li> <a href="#">Template</a></li>
-              <li> <a href="#">Universe</a></li>
-              <li> <a href="#">Pricing</a></li>
-              <li> <a href="#">Sign in</a></li>
-              <li> <a class="register" href="#">Sign up</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="row">
-          <div class="row banner col-md-12">
-            <div class="col-md-6">
+      <div class="main">
+        <div class="navigation-bar">
+          <nav class="d-flex main-bar">
+            <h4 class="logo">
+              <img src="./assets/img/airtable-icon.svg" alt="" /> Airtable
+            </h4>
+            <div class="menu-icons d-block d-md-none">
+              <i class="icon ion-md-menu"></i>
+              <i class="icon ion-md-close"></i>
+            </div>
+            <div class="d-none d-md-block">
+              <ul class="navigation-list">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Blocks</a></li>
+                <li><a href="#">Template</a></li>
+                <li><a href="#">Universe</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a class="register" href="#">Sign up</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="row banner">
+          <div class="row col-lg-12">
+            <div class="col-lg-5 col-12 spread-signup">
               <h2 class="spread">
                 Spreadsheet, meet database
               </h2>
@@ -42,10 +50,10 @@
                 <a href="#">Sign up for free</a>
               </div>
             </div>
-            <div class="col-md-6 img">
+            <div class="col-lg-7 col-12 chart">
               <img
-                src="./assets/img/dash.png"
-                class=" img-fluid rounded float-left"
+                data-src="./assets/img/chart.png"
+                class=" img-fluid"
                 alt="..."
               />
             </div>
@@ -54,21 +62,25 @@
       </div>
       <div class="row first">
         <div class="col-md-3 mobile">
-          <img src="./assets/img/iphone 1.png" class="rounded float-left" alt="">
+          <img
+            data-src="./assets/img/mobile.png"
+            class="img-fluid rounded float-left"
+            alt=""
+          />
         </div>
         <div class="col-md-5 organize">
+          <h2>
+            Organize anything, with anyone, from anywhere.
+          </h2>
           <h4>
-            Organize anything, with anyone,
-            from anywhere.
+            Our native mobile and desktop apps make it easy to edit, comment,
+            and collaborate in real time &mdash; changes are instantly synced
+            across everyone's devices.
           </h4>
-          <p>
-            Our native mobile and desktop apps make it easy to edit,
-            comment, and collaborate in real time &mdash; changes are
-            instantly synced across everyone's devices.
-          </p>
+
           <a href="#">Download the apps</a>
           <div class="billy">
-              <img src="./assets/img/airtable-icon.svg" alt="">
+            <img src="./assets/img/airtable-icon.svg" alt="" />
             <div class="bill d-flex justify-content-between">
               <h6>Billy</h6>
               <small class="text-muted">now</small>
@@ -76,138 +88,196 @@
             <p>has invited you to collaborate</p>
           </div>
         </div>
-        <div class="col-md-3 gmail">
-          <img src="./assets/img/macbook.png" class="rounded float-right" alt="">
+        <div class="col-md-3 mac">
+          <img
+            data-src="./assets/img/mac.png"
+            class="rounded float-right"
+            alt=""
+          />
         </div>
         <div class="ipad">
-          <img src="./assets/img/ipad.png" alt="">
+          <img data-src="./assets/img/ipad1.png" alt="" />
         </div>
       </div>
 
       <div class="row unique">
-          <div class="col-md-5 offset-md-1">
-            <h4>Unique field types for your content</h4>
-          </div>
-          <div class="col-md-6">
-            <p>
-              Airtable fields can handle any content you throw at them.
-              Add attachments, long text notes, checkboxes, links to
-              records in other tables&mdash;even barcodes. Whatever you need
-              to stay organized.
-            </p>
-          </div>
+        <div class="col-md-5 offset-md-1">
+          <h4>Unique field types for your content</h4>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Airtable fields can handle any content you throw at them. Add
+            attachments, long text notes, checkboxes, links to records in other
+            tables&mdash;even barcodes. Whatever you need to stay organized.
+          </p>
+        </div>
       </div>
       <div class="row configure">
-          <div class="col-md-5 offset-md-1">
-            <h4>Configure the perfect view</h4>
-          </div>
-          <div class="col-md-6">
-            <p>
-              Break free of the grid, powerful filtering, sorting, and grouping
-              give you the freedom to arrange your work just the way you like.
-              Choose the right views for your current, and save them for easy
-              access any time.
-            </p>
-          </div>
+        <div class="col-md-5 offset-md-1">
+          <h4>Configure the perfect view</h4>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Break free of the grid, powerful filtering, sorting, and grouping
+            give you the freedom to arrange your work just the way you like.
+            Choose the right views for your current, and save them for easy
+            access any time.
+          </p>
+        </div>
       </div>
-          <div class="row astronaunt">
-          <div class="col-md-9">
-              <h4 class="card-head">Kanban</h4>
-              <p><small>stocked by <b>&copy; Priority</b> </small></p>
-          </div>
-          <div class="card-group">
-              <div class="card">
-                <img src="./assets/img/astro.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Flight deck priliminary in..</h5>
-                  <input type="checkbox" checked disabled name="complete" id="complete"> <small class="text-muted">completed</small>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./assets/img/astro1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Final astronaunt training..</h5>
-                  <input type="checkbox" checked disabled name="complete" id="complete"> <small class="text-muted">completed</small>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./assets/img/astro2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Clean and vacuum crew... </h5>
-                  <input type="checkbox" checked disabled name="complete" id="complete"> <small class="text-muted">completed</small>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
+      <div class="row astronaunt">
+        <div class="col-md-9">
+          <h4 class="card-head">Kanban</h4>
+          <p>
+            <small>stocked by <b>&copy; Priority</b> </small>
+          </p>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img data-src="./assets/img/astro.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Flight deck priliminary in..</h5>
+              <input
+                type="checkbox"
+                checked
+                disabled
+                name="complete"
+                id="complete"
+              />
+              <small class="text-muted">completed</small>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
             </div>
-            <div class="card-group">
-                <div class="card">
-                  <img src="./assets/img/astro3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Flight deck priliminary in..</h5>
-                    <input type="checkbox" checked disabled name="complete" id="complete"> <small class="text-muted">completed</small>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./assets/img/astro4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Final astronaunt training..</h5>
-                    <input type="checkbox" checked disabled name="complete" id="complete"> <small class="text-muted">completed</small>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="./assets/img/astro5.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Clean and vacuum crew... </h5>
-                    <input type="checkbox" checked disabled name="complete" id="complete"> <small class="text-muted">completed</small>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="card">
+            <img data-src="./assets/img/astro1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Final astronaunt training..</h5>
+              <input
+                type="checkbox"
+                checked
+                disabled
+                name="complete"
+                id="complete"
+              />
+              <small class="text-muted">completed</small>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img data-src="./assets/img/astro2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Clean and vacuum crew...</h5>
+              <input
+                type="checkbox"
+                checked
+                disabled
+                name="complete"
+                id="complete"
+              />
+              <small class="text-muted">completed</small>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="card-group">
+          <div class="card">
+            <img data-src="./assets/img/astro3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Flight deck priliminary in..</h5>
+              <input
+                type="checkbox"
+                checked
+                disabled
+                name="complete"
+                id="complete"
+              />
+              <small class="text-muted">completed</small>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img data-src="./assets/img/astro4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Final astronaunt training..</h5>
+              <input
+                type="checkbox"
+                checked
+                disabled
+                name="complete"
+                id="complete"
+              />
+              <small class="text-muted">completed</small>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img data-src="./assets/img/astro5.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Clean and vacuum crew...</h5>
+              <input
+                type="checkbox"
+                checked
+                disabled
+                name="complete"
+                id="complete"
+              />
+              <small class="text-muted">completed</small>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row unique">
-          <div class="col-md-5 offset-md-1">
-            <h4>Link related content intelligently.</h4>
-          </div>
-          <div class="col-md-6">
-            <p>
-              Say goodbye to duplicate data entry. It only takes a few clicks to
-              link records between tables, creating smart relationships
-            </p>
-          </div>
+        <div class="col-md-5 offset-md-1">
+          <h4>Link related content intelligently.</h4>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Say goodbye to duplicate data entry. It only takes a few clicks to
+            link records between tables, creating smart relationships
+          </p>
+        </div>
       </div>
       <div class="row configure">
-          <div class="col-md-5 offset-md-1">
-            <h4>Integrate with all your apps</h4>
-          </div>
-          <div class="col-md-6">
-            <p>
-              Airtable works with the tools you already use. Connect to hundreds
-              of your favourite apps and services, or access your content
-              programatically with our robust API.
-            </p>
-          </div>
+        <div class="col-md-5 offset-md-1">
+          <h4>Integrate with all your apps</h4>
         </div>
-        <div class="icons">
-            <i class="fa fa-dropbox"></i>
-            <i class="fa fa-slack"></i>
-            <i class="fa fa-twitter-square"></i>
-            <i class="fa fa-gitlab"></i>
-            <i class="fa fa-github"></i>
-            <i class="fa fa-facebook-square"></i>
-
-          </div>
-          <div class="integrate">
-            <a href="#">See all integrations &DoubleRightArrow;</a>
-          </div>
+        <div class="col-md-6">
+          <p>
+            Airtable works with the tools you already use. Connect to hundreds
+            of your favourite apps and services, or access your content
+            programatically with our robust API.
+          </p>
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fa fa-dropbox"></i>
+        <i class="fa fa-slack"></i>
+        <i class="fa fa-twitter-square"></i>
+        <i class="fa fa-gitlab"></i>
+        <i class="fa fa-github"></i>
+        <i class="fa fa-facebook-square"></i>
+      </div>
+      <div class="integrate">
+        <a href="#">See all integrations &DoubleRightArrow;</a>
+      </div>
       <div class="row subscribe">
-        <div class="col-md-6 offset-md-3 create">
+        <div class="col-xl-4 offset-xl-3 col-md-8 offset-md-2 col-sm-8 offset-sm-1 create">
           <h4>Create your first database in minutes.</h4>
         </div>
-        <div class=" col-md-6 offset-md-3 sub">
+        <div class=" col-xl-5 offset-xl-3 col-md-8 offset-md-2 col-sm-8 offset-sm-1 sub">
           <input
             type="email"
             name="email"
@@ -215,9 +285,9 @@
             id="email"
             placeholder="Enter your email"
           />
-          <button class="btn btn-primary">Sign up</button>
+          <button class="btn btn-primary">Sign up for free</button>
         </div>
-        <div class="col-md-6 offset-md-3 plans">
+        <div class="col-xl-5 offset-xl-3 col-md-8 offset-md-2 col-sm-8 offset-sm-1 plans">
           <p>
             Airtable is free to use for teams of any size. We also offer
             <a href="#">paid plans</a> with additional features, storage and
@@ -226,48 +296,48 @@
         </div>
       </div>
       <div class="row foot">
-          <div class="col-md-3">
-            <ul>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Inspiration</a></li>
-              <li><a href="#">Blocks</a></li>
-              <li><a href="#">Templates</a></li>
-              <li><a href="#">Universe</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Case studies</a></li>
-              <li><a href="#">Security</a></li>
-              <li><a href="#">Enterprise</a></li>
-              <li><a href="#">API</a></li>
-              <li><a href="#">integrations</a></li>
-              <li><a href="#">Download apps</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul>
-              <li><a href="#">Abouts</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Creators magazine</a></li>
-              <li><a href="#">Contact sales</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <ul>
-              <li class="hire"><a href="#">We're hiring!</a></li>
-              <li><a href="#">Questions?</a></li>
-              <li><a href="#">Explore our help center</a></li>
-              <li class="terms"><p>&copy; Airtable Terms Privacy</p></li>
-            </ul>
-          </div>
+        <div class="col-md-3">
+          <ul>
+            <li class="gap-underline"><a href="#">Product</a></li>
+            <li class="gap-underline"><a href="#">Inspiration</a></li>
+            <li><a href="#">Blocks</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Universe</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Case studies</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">integrations</a></li>
+            <li><a href="#">Download apps</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Abouts</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Creators magazine</a></li>
+            <li><a href="#">Contact sales</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li class="hire"><a href="#">We're hiring!</a></li>
+            <li class="no-underline"><a href="#">Questions?</a></li>
+            <li><a href="#">Explore our help center</a></li>
+            <li class="terms"><p>&copy; Airtable Terms Privacy</p></li>
+          </ul>
         </div>
       </div>
+    </div>
     <script src="./assets/script.js"></script>
   </body>
 </html>

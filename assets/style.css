@@ -10,6 +10,8 @@ body {
 
 .main {
     background: #1283da;
+    position: relative;
+    z-index: 1;
 }
 
 .navigation-bar {
@@ -50,6 +52,7 @@ nav ul li{
 }
 
 .logo img {
+    margin-top: -5%;
     height: 40px;
 }
 .menu-icons{
@@ -61,7 +64,6 @@ nav ul li{
 .navigation-list {
     float: right;
     margin-right: 20px;
-    /* font-size: 1.2rem; */
     font-weight: 600;
     cursor: pointer;
 }
@@ -94,9 +96,11 @@ nav ul li{
     color: #fff;
     font-size: 2.8rem;
     font-weight: 630;
+    margin-bottom: 7rem;
 }
 
 .spread-signup {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -105,11 +109,14 @@ nav ul li{
 }
 
 .sign-up {
+    position: absolute;
+    top: 55%;
     border: 2px solid #fff;
     display: inline-block;
     background: #fff;
     outline: 0;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: -2px !important;
     /* margin-top: 1rem;
     margin-bottom: 4rem; */
     border-radius: 6px;
@@ -117,7 +124,7 @@ nav ul li{
 
 .sign-up a {
     text-decoration: none;
-    color: #1e6af6;
+    color: #2d7ff9;
     font-size: 1.1rem;
     font-weight: 600;
     white-space: nowrap;
@@ -132,12 +139,18 @@ nav ul li{
 }
 .chart img {
     width: 100%;
+    height: 405px;
     box-shadow: 9px 9px rgba(43, 42, 42, 0.2);
     margin-right: 6%;
 }
 
+.mobile {
+    margin-top: -4%;
+}
+
 .mobile img{
-    height: 400px;
+    /* width: 100%; */
+    height: auto;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -208,17 +221,6 @@ small {
     font-weight: 400;
 }
 
-.unique {
-    position: relative;
-    background: rgb(231, 229, 229);
-    padding: 4rem;
-}
- 
-.unique h4 {
-    font-weight: 600;
-    font-size: 2.1rem;
-}
-
 .mac {
     margin-top: 3rem;
     margin-right: -320px;
@@ -235,17 +237,62 @@ small {
     margin-left: 5%;
 }
 .ipad img {
-    width: 55%;
-    height: 106%;
+    width: 100%;
+    height: auto;
 }
 
+.unique-container {
+    background: rgb(231, 229, 229);
+    position: relative;
+    padding: 3rem;
+
+}
+.unique {
+    display: flex;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+ 
+.unique h2 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    /* padding-right: 2rem; */
+}
+
+.unique h4 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: .01em;
+    margin: 0;
+    color: hsl(0,0%,20%);
+}
+
+
 .configure {
-    padding: 4rem;
+    display: flex;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.configure h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    /* padding-right: 2rem; */
 }
 
 .configure h4 {
-    font-weight: 600;
-    font-size: 2.1rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: .01em;
+    margin: 0;
+    color: hsl(0,0%,20%);
 }
 
 .astronaunt {
@@ -287,13 +334,23 @@ small {
 }
 
 .integrate {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .integrate a {
+    text-decoration: none;
     border-bottom: 2px solid #1e6af6;
     padding-bottom: 3px;
+    color: #2d7ff9;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    font-weight: normal;
+}
+.integrate a:hover {
+    border-bottom: 2px solid #04419c;
+    color: #04419c;
 }
 .icons {
     text-align: center;
@@ -316,7 +373,7 @@ small {
     color: rgb(2, 24, 83);
 }
 .subscribe {
-    padding: 4rem 2rem 4rem 2rem;
+    padding: 3rem 2rem 3rem 2rem;
     background: #f82b60;
     color: #fff;
 }
@@ -333,6 +390,10 @@ small {
     font-size: 1rem;
     border-radius: 6px;
     padding: 0.5rem;
+}
+
+.sub input {
+    width: 70%;
 }
 
 .btn {
@@ -361,14 +422,21 @@ small {
 }
 
 .foot {
-    margin-left: 5%;
-    margin-top: 70px;
-    margin-bottom: 40px;
+    width: 100%;
+    padding: 4rem 2rem 4rem 2rem;
+    margin-left: 2%;
+}
+
+.flex-item {
+    width: 230.4px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .foot ul li {
     list-style-type: none;
     text-decoration: none;
+    margin-bottom: 0.5rem;
     line-height: 1.7;
 }
 
@@ -377,11 +445,16 @@ small {
     border-bottom: 2px solid hsla(0,0%,0%,0.1);
     padding-bottom: 2px;
     color: hsl(0,0%,20%);
-    font-size: 1.0rem;
+    opacity: 0.75;
+    font-size: 0.9rem;
 }
 
 .foot ul li a:hover {
     border-bottom: 2px solid rgba(26, 25, 25, 0.6);
+}
+
+.foot-img img {
+    height: 40px;
 }
 
 .hire {
@@ -391,29 +464,48 @@ small {
     color: #1e6af6 !important;
     border-bottom: 2px solid #1e6af6 !important;
 }
+
+.no-underline {
+    margin-top: 4%;
+}
+
+.no-underline a{
+    border: none !important;
+}
+
+.explore {
+    margin-top: -2%;
+}
+
 .terms {
     text-decoration: none !important;
     color: gray;
-    margin-top: 30px;
+    font-size: 0.8rem;
+    margin-top: 50px;
+}
+
+.terms a {
+    color: gray !important;
+    font-size: 0.8rem !important;
 }
 
 @media screen and (max-width: 830px){
-    /* .navigation-list {
+    .navigation-list {
         position: fixed;
         top: 0;
         left: 0;
         height: 100vh;
         display: none;
-        flex-direction: column;
+        flex-direction: flex;
         background-color: #191919;
         z-index: 1000;
         align-items: initial;
         overflow-y: scroll;
-    } */
+    } 
 
-    /* .menu-icons{
+     .menu-icons{
         display: block;
-    } */
+    } 
 
     .ion-md-close{
         display: none;
@@ -440,11 +532,8 @@ small {
     .organize {
         margin-left: 10%;
     }
-    .img {
-        width: 20px;
-        justify-content: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
+    .chart {
+        margin-top: 0;
     }
 }
 
@@ -481,6 +570,21 @@ small {
 }
 @media screen and (max-width: 400px) {
     .mobile {
-        transform: translateX(20%);
+        transform: translateX(15%);
+    }
+    .spread {
+        margin-top: 10%;
+        font-size: 1.8rem
+    }
+    .sign-up {
+        top: 55%;
+    }
+    .sign-up a {
+        font-size: 1.0rem;
+        padding: 0.3rem;
+    }
+    .sub input {
+        width: 50%;
     }
 }
+
